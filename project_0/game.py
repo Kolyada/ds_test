@@ -2,6 +2,14 @@ import numpy as np
 
 
 def random_predict(number: int) -> int:
+    """Решение по умолчанию
+
+    Args:
+        number (int): Искомое число
+
+    Returns:
+        int: Число попыток
+    """
     count = 0
     while True:
         count += 1
@@ -12,11 +20,11 @@ def random_predict(number: int) -> int:
 
 
 def binary_predict(number: int, min_val: int = 1, max_val: int = 100) -> int:
-    """Функция ищет заданное число из интервале методом бинарного поиска,
+    """Функция ищет заданное число из интервала методом бинарного поиска,
     полагаясь на результаты сравнения
 
     Args:
-        number (int, optional): Искомое чисо. Defaults to 1.
+        number (int, optional): Искомое число. Defaults to 1.
         min_value (int, optional): Начало интервала (включительно)
         max_value (int, optional): Конец интервала (включительно).
 
